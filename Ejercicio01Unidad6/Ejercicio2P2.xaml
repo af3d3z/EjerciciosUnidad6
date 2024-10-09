@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio01Unidad6.Ejercicio2P2"
+             Title="Ejercicio2P2">
+    <VerticalStackLayout x:Name="vslSwitch">
+        <Label x:Name="lblModo">Modo claro</Label>
+        <Switch x:Name="swtModo" IsToggled="True" Toggled="switcher_Toggled"></Switch>
+    </VerticalStackLayout>
+</ContentPage>

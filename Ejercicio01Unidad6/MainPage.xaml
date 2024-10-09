@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio01Unidad6.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="VStackLayout"
+            Padding="30,0"
+            Spacing="25">
+            <Button x:Name="btn1" Text="Boton1" MaximumHeightRequest="70" MaximumWidthRequest="200" BorderWidth="2" BackgroundColor="Blue"
+                    FontAttributes="Bold" FontSize="16" FontFamily="Verdana" BorderColor="Yellow" Margin="5"></Button>
+            <Button x:Name="btn2" Clicked="btn2OnClick">
+                <Button.Text>Boton2</Button.Text>
+                <Button.BackgroundColor>Blue</Button.BackgroundColor>
+                <Button.MaximumHeightRequest>70</Button.MaximumHeightRequest>
+                <Button.MaximumWidthRequest>200</Button.MaximumWidthRequest>
+                <Button.FontFamily>Verdana</Button.FontFamily>
+                <Button.FontAttributes>Bold</Button.FontAttributes>
+                <Button.BorderColor>Yellow</Button.BorderColor>
+                <Button.BorderWidth>2</Button.BorderWidth>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.Margin>5</Button.Margin>
+            </Button>
+            <Button x:Name="btnEj2" Clicked="btnEj2Click">
+                <Button.Text>Ir al ejercicio 2</Button.Text>
+                <Button.VerticalOptions>End</Button.VerticalOptions>
+                <Button.IsVisible>False</Button.IsVisible>
+            </Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

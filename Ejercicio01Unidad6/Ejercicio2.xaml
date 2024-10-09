@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio01Unidad6.Ejercicio2"
+             Title="Ejercicio2">
+    <VerticalStackLayout Margin="10" Padding="30">
+        <Label Text="Slider"></Label>
+        <Slider x:Name="slider" ThumbColor="CornflowerBlue" MaximumTrackColor="CornflowerBlue" MinimumTrackColor="CornflowerBlue">
+        </Slider>
+        <Label Text="Progress Bar"></Label>
+        <ProgressBar HorizontalOptions="Fill" VerticalOptions="Fill" Margin="30" ProgressColor="CornflowerBlue"
+                     BindingContext="{x:Reference slider}" Progress="{Binding Path=Value}"/>
+        <Button x:Name="btnEj3" Text="Ir a la parte 2 del ejercicio" Clicked="BtnEj3_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
